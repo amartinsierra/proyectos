@@ -23,7 +23,7 @@ public class TablaNumero extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		response.setContentType("text/html");
 		int numero=Integer.parseInt(request.getParameter("numero"));
-		out.println("<html><body><center>");
+		out.println("<html><body bgcolor='pink'>");
 		out.println("<h1>Tabla del "+numero+"</h1>");
 		out.println("<table border='1'>");
 		for(int fila=1;fila<=10;fila++) {
@@ -34,7 +34,7 @@ public class TablaNumero extends HttpServlet {
 		out.println("</table>");
 		out.println("<a href='datos.html'>Volver</a>");
 		
-		out.println("</center></body></html>");
+		out.println("</body></html>");
 		out.close();
 	}
 
